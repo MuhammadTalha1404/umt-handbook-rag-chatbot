@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NLP Project Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <div class="chat">
+      <div class="topbar">
+        <div class="brand">
+          <div class="dot"></div>
+          <div class="brandText">
+            <div class="title">NLP Project Chatbot</div>
+            <div class="subtitle">RAG over your FAISS knowledge base</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="clearBtn" title="Clear chat">Clear</button>
+          <span class="pill" id="statusPill">Ready</span>
+        </div>
+      </div>
+
+      <div class="content" id="chat"></div>
+
+      <div class="composer">
+        <textarea id="input" placeholder="Type your question. Press Enter to send, Shift+Enter for new line."></textarea>
+        <button class="send" id="sendBtn">Send</button>
+      </div>
+    </div>
+
+    <div class="side">
+      <h3>Sources</h3>
+      <div class="panel" id="sources">
+        <div class="hint">
+          Ask a question and I’ll show the top retrieved chunks here so you can verify the answer.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
