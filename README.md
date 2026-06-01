@@ -1,0 +1,1 @@
+A smart UMT handbook assistant that turns a static university handbook into an interactive Q&A chatbot. Built with Flask, FAISS, LangChain, and OpenAI, it helps users quickly find handbook-based answers without manually searching through pages.
